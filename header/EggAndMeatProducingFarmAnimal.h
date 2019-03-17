@@ -6,5 +6,6 @@ using namespace std;
 
 class EggAndMeatProducingFarmAnimal : public EggProducingFarmAnimal, public MeatProducingFarmAnimal {
     public:
+        //KONSTRUKTOR
         EggAndMeatProducingFarmAnimal(Point, string, string, int);
 };

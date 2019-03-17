@@ -7,5 +7,6 @@ using namespace std;
 
 class MeatAndMilkProducingFarmAnimal: public MeatProducingFarmAnimal, public MilkProducingFarmAnimal {
     public: 
+        //KONSTRUKTOR
         MeatAndMilkProducingFarmAnimal(Point, string, string, int);   
 };
