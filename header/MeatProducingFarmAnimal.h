@@ -1,3 +1,6 @@
+#ifndef _MEATPRODUCINGFARMANIMAL_H
+#define _MEATPRODUCINGFARMANIMAL_H
+
 #include <iostream>
 #include "FarmAnimal.h"
 #include "FarmProduct.h"
@@ -20,3 +23,5 @@ class MeatProducingFarmAnimal : public FarmAnimal {
         //METHOD
         FarmProduct produce();
 };
+
+#endif

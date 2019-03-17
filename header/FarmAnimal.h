@@ -1,3 +1,6 @@
+#ifndef _FARMANIMAL_H
+#define _FARMANIMAL_H
+
 #include <iostream>
 #include <string>
 #include "Point.h"
@@ -35,3 +38,5 @@ class FarmAnimal {
         void makan(); //makan rumput, mengubah status lapar
         virtual FarmProduct produce() = 0; //produksi FarmProduct, berbeda tiap jenis hewan
 };
+
+#endif
