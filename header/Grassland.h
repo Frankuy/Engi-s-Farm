@@ -1,9 +1,18 @@
+#ifndef _GRASSLAND_H
+#define _GRASSLAND_H
+
 #include <iostream>
 #include <string>
+#include "Land.h"
+
 using namespace std;
 
-class GrassLand {
-    private:
-    
-    public:
+class Grassland : public Land
+{
+	public:
+		// KONSTRUKTOR
+		Grassland();
+		~Grassland();
 };
+
+#endif

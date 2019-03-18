@@ -1,9 +1,18 @@
+#ifndef _MIXER_H
+#define _MIXER_H
+
 #include <iostream>
 #include <string>
+#include "Facility.h"
+
 using namespace std;
 
-class Mixer {
-    private:
-    
-    public:
+class Mixer : public Facility
+{
+	public:
+		Mixer();
+		~Mixer();
 };
+
+#endif
+
