@@ -7,6 +7,7 @@ using namespace std;
 class SideProduct : public Product{
     private:
         string *requirements;
+        int n_Material;
     public:
     /* Jika ingin membuat SideProduct, uruttan langkahnya:
             - Create new object "SideProduct prod;"
@@ -15,4 +16,7 @@ class SideProduct : public Product{
         SideProduct(Player user);
         SideProduct& operator =(SideProduct input);
         bool obtainable(Player user);
+    // Setter & getter
+        int getNbMaterial();
+        string getMaterialN(int n);
 };
