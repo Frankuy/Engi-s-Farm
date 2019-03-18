@@ -11,8 +11,8 @@ class Cell {
     protected:
 		int nBrs;
 		int nKol;
-		virtual atasKiri() = 0;
-		virtual bawahKanan() = 0;
+		virtual Point atasKiri() = 0;
+		virtual Point bawahKanan() = 0;
 		char ** isi;
     public:
 		// KONSTRUKTOR
