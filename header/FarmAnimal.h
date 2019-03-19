@@ -7,7 +7,7 @@ using namespace std;
 
 #ifndef FARMANIMAL_H
 #define FARMANIMAL_H
-class FarmAnimal : public Renderable {
+class FarmAnimal{
     protected:
         Point lokasi; //lokasi hewan
         string nama; //nama hewan
