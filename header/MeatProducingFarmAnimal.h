@@ -1,13 +1,13 @@
-#ifndef _MEATPRODUCINGFARMANIMAL_H
-#define _MEATPRODUCINGFARMANIMAL_H
-
 #include <iostream>
+#include <string>
 #include "FarmAnimal.h"
 #include "FarmProduct.h"
-#include <string>
 using namespace std;
 
+#ifndef MEATANIMAL_H
+#define MEATANIMAL_H
 class MeatProducingFarmAnimal : public FarmAnimal {
+    /* Kelas ini merepresentasikan Hewan yang dapat menghasilkan daging */
     protected:
         bool ableProduceMeat; //apakah hewan sudah bisa memproduksi daging atau tidak.
                               //tergantung status lapar dan produknya sudah diambil atau belum
@@ -17,11 +17,10 @@ class MeatProducingFarmAnimal : public FarmAnimal {
         MeatProducingFarmAnimal(Point, string, string, int);
         
         //SETTER AND GETTER
-        void setAbleProduceMeat();
+        void setAbleProduceMeat(bool);
         bool getAbleProduceMeat();
         
         //METHOD
-        FarmProduct produce();
+        FarmProduct produceMeat();
 };
-
 #endif

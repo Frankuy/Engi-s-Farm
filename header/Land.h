@@ -4,30 +4,30 @@
 #include <iostream>
 #include <string>
 #include "Cell.h"
+#include "Renderable.h"
 
 using namespace std;
 
-class Land : public Cell {
+class Land {
+	/* Kelas ini merepresentasikan petak tanah pada setiap cell */
     protected:
-		Point atasKiri;
-		Point bawahKanan;
-		bool ** adaRumputnya;
-		char ** isiLand;
+			Point lokasi;
+			//Lokasi dari land
+			bool adaRumputnya;
+			//ada rumput atau tidak
     public:
-		// KONSTRUKTOR
-		Land(Point, Point);
-		~Land();
+			// KONSTRUKTOR
+			Land(Point lokasi);
+				//Membuat Land (AKiri sampai BKanan) dengan semua petak ada rumput
 		
-		// SETTER GETTER
-		Point getAtasKiri() const;
-		Point getBawahKanan() const;
-		bool getAdaRumputnya(Point) const;
-		char getIsiLand(Point) const;
+			// SETTER GETTER
+			Point getLokasi() const;
+				//Mengembalikkan lokasi Land
+			bool getAdaRumputnya() const;
+				//Mengembalikkan adakah rumput di lokasi terhadap cell
 		
-		void setAtasKiri(Point);
-		void setBawahKanan(Point);
-		void setAdaRumputnya(Point, bool);
-		void setIsiLand(Point);
+			void setLokasi(Point);
+			void setAdaRumputnya(bool);
 };
 
 #endif

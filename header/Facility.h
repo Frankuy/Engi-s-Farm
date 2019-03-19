@@ -7,25 +7,15 @@
 
 using namespace std;
 
-class Facility : public Cell
+class Facility
 {
+	/* Kelas ini merepresentasikan facilty pada permainan */
 	protected:
-		Point atasKiri;
-		Point bawahKanan;
-		char ** isiFacility;
+		Point lokasi;
+			//Lokasi dari faciltiy
 	public:
 		// KONSTRUKTOR
-		Facility(Point, Point);
-		~Facility();
-		
-		// SETTER GETTER
-		Point getAtasKiri() const;
-		Point getBawahKanan() const;
-		char getIsiFacility(Point) const;
-		
-		void setAtasKiri(Point);
-		void setBawahKanan(Point);
-		void setIsiFacility(Point, char);
+		Facility(Point);
+			//Membentuk fasilitas dan mengeset Lokasinya
 };
-
 #endif

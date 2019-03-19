@@ -7,11 +7,12 @@
 
 using namespace std;
 
-class Well : public Facility
+class Well : public Facility, public Renderable
 {
 	public:
 		Well();
 		~Well();
+		char render();
 };
 
 #endif

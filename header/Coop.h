@@ -7,12 +7,19 @@
 
 using namespace std;
 
-class Coop : public Land
+class Coop : public Land, public Renderable
 {
 	public:
+	/* Coop : Kelas yang merepresentasikan Coop (subclass Land) dimana 
+		kandang EggProducingFarmAnimal 
+	*/
 		// KONSTRUKTOR
 		Coop();
-		~Coop();
-};
+		Coop(Point); 
+
+		//METHOD
+		char render();
+			//Menampilkan representasi Coop
+};	
 
 #endif

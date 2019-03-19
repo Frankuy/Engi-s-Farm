@@ -7,12 +7,12 @@
 
 using namespace std;
 
-class Truck : public Facility
+class Truck : public Facility, public Renderable
 {
 	public:
 		Truck();
 		~Truck();
+		char render();
 };
 
 #endif
-

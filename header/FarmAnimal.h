@@ -1,13 +1,13 @@
-#ifndef _FARMANIMAL_H
-#define _FARMANIMAL_H
-
 #include <iostream>
 #include <string>
 #include "Point.h"
 #include "FarmProduct.h"
+#include "Renderable.h"
 using namespace std;
 
-class FarmAnimal {
+#ifndef FARMANIMAL_H
+#define FARMANIMAL_H
+class FarmAnimal : public Renderable {
     protected:
         Point lokasi; //lokasi hewan
         string nama; //nama hewan
@@ -18,25 +18,23 @@ class FarmAnimal {
     public:
         //KONSTRUKTOR
         FarmAnimal(Point, string, string, int); 
-        ~FarmAnimal();
+        virtual ~FarmAnimal();
         
         //SETTER AND GETTER
-        void setPoint(Point);
+        void setLokasi(Point);
         void setNama(string);
         void setSuara(string);
-        void setLapar();
+        void setLapar(bool);
 
-        Point getPoint() const;
+        Point getLokasi() const;
         string getNama() const;
         string getSuara() const;
         bool getLapar() const;
 
         //METHODS
-        void gerak(); //menggerakkan hewan, mengubah posisi hewan
-        void bersuara(); //mengeluarkan suara berupa cetakan ke terminal
-        void mati(); //destruct hewan
-        void makan(); //makan rumput, mengubah status lapar
-        virtual FarmProduct produce() = 0; //produksi FarmProduct, berbeda tiap jenis hewan
+        virtual void gerak(); //menggerakkan hewan, mengubah posisi hewan
+        virtual void bersuara() = 0; //mengeluarkan suara berupa cetakan ke terminal
+        virtual void mati(); //destruct hewan
+        virtual void makan(); //makan rumput, mengubah status lapar
 };
-
 #endif
