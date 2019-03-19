@@ -5,7 +5,7 @@
 using namespace std;
 
 class SideProduct : public Product{
-    private:
+    protected:
         string *requirements;
         int n_Material;
     public:
