@@ -33,8 +33,9 @@ class FarmAnimal : public Renderable {
 
         //METHODS
         virtual void gerak(); //menggerakkan hewan, mengubah posisi hewan
-        virtual void bersuara() = 0; //mengeluarkan suara berupa cetakan ke terminal
+        virtual void bersuara(); //mengeluarkan suara berupa cetakan ke terminal
         virtual void mati(); //destruct hewan
         virtual void makan(); //makan rumput, mengubah status lapar
+        virtual FarmProduct produce() = 0; //Memproduce sesuatu sesuai kapabilitas hewannya
 };
 #endif

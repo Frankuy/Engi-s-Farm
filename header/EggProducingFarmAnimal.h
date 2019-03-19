@@ -21,7 +21,6 @@ class EggProducingFarmAnimal : public FarmAnimal {
         void setAbleProduceEgg(bool);
 
         //METHOD
-        FarmProduct produceEgg();
-            //Menghasilkan FarmProduct yaitu egg
+        FarmProduct produce(); //Menghasilkan FarmProduct yaitu egg
 };
 #endif
