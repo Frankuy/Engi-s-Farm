@@ -16,6 +16,7 @@ class Facility
 	public:
 		// KONSTRUKTOR
 		Facility(Point);
+		Point getLokasi() const;
 			//Membentuk fasilitas dan mengeset Lokasinya
 };
 #endif

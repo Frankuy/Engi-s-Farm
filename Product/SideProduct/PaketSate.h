@@ -9,9 +9,15 @@ using namespace std;
 class PaketSate: public SideProduct{
     //Kelas yang merepresentasikan Sate-satean,
     //gabungan dari daging ayam dan daging sate
+    /* Recipe :
+        - Daging Sapi
+        - Daging Ayam
+        - Daging Kambing
+       Harga : 500000
+     */
     public:
         //KONSTRUKTOR
-        PaketSate(Player user);
+        PaketSate();
 };
 
 #endif

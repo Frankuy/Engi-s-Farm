@@ -9,9 +9,13 @@ using namespace std;
 class GeprekSusu: public SideProduct{
     //Kelas turunan sideProduct yang menggabungkan:
     //daging ayam dan susu sapi
+    /* Requirements:
+        - "Susu Sapi"
+        - "Daging Ayam"
+     */
     public:
         //KONSTRUKTOR
-        GeprekSusu(Player user);
+        GeprekSusu();
 };
 
 #endif

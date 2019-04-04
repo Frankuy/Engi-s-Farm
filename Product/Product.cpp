@@ -22,7 +22,8 @@ void Product::setNama(string nama){
 }
 
 ostream& operator<<(ostream& os, const Product& p){
-    cout << p.getNama() << '\t' << p.getHarga() << endl; 
+    os << p.getNama() << '\t' << p.getHarga() << '\n'; 
+    return os;
 }
 
 bool Product::operator==(const Product& p) const{

@@ -15,8 +15,7 @@ class Grassland : public Land, public Renderable
 	*/
 	public:
 		// KONSTRUKTOR
-		Grassland();
-		~Grassland();
+		Grassland(Point);
 
 		//METHOD
 		char render();

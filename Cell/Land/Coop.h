@@ -15,7 +15,6 @@ class Coop : public Land, public Renderable
 		kandang EggProducingFarmAnimal 
 	*/
 		// KONSTRUKTOR
-		Coop();
 		Coop(Point); 
 
 		//METHOD

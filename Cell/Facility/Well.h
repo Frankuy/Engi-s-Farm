@@ -11,8 +11,7 @@ using namespace std;
 class Well : public Facility, public Renderable
 {
 	public:
-		Well();
-		~Well();
+		Well(Point);
 		char render();
 };
 

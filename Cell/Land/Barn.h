@@ -15,8 +15,6 @@ class Barn : public Land, public Renderable
 	*/
 	public:
 		// KONSTRUKTOR
-		Barn();
-			//DEFAULT : lokasi nya random dan ada rumput
 		Barn(Point);
 			//CUSTOM : Point lokasi nya di set sesuai user dan ada rumput
 
