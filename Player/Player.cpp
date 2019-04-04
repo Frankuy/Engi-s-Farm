@@ -87,8 +87,9 @@ void Player::lihatTas() {
     }
     else {
         cout << "Tas : " << endl;
+        int idx = 1;
         while (temp != NULL) {
-            cout << ' ' << temp->value;
+            cout << ' ' << idx++ << ' ' << temp->value;
             temp = temp->next;
         }
     }
@@ -137,7 +138,70 @@ void Player::grow(Land &l) {
 }
 
 void Player::mix(Cell& c) {
-    //
+    lihatTas();
+    int tmp;
+    GeprekSusu gs;
+    PaketSate psa;
+    PaketSteak pst;
+    cout << "1. " << gs << "2. " << psa << "3. " << pst;
+    cin >> tmp;
+    switch (tmp)
+    {
+        case 1:
+            bool flag = true;
+            for(int i = 0; i < 2; i++){
+                if (tas.find(gs.getMaterialN(i)) == -1){
+                    flag = false;
+                }
+            }
+            if (flag){
+                for(int i = 0; i < 2; i++){
+                    tas.remove(gs.getMaterialN(i));
+                }
+                tas.add(gs);
+            }
+            else{
+                cout << "Produk tidak dapat dibuat\n";
+            }
+            break;
+        case 2:
+            bool flag = true;
+            for(int i = 0; i < 3; i++){
+                if (tas.find(psa.getMaterialN(i)) == -1){
+                    flag = false;
+                }
+            }
+            if (flag){
+                for(int i = 0; i < 3; i++){
+                    tas.remove(psa.getMaterialN(i));
+                }
+                tas.add(psa);
+            }
+            else{
+                cout << "Produk tidak dapat dibuat\n";
+            }
+            break;
+        case 3:
+            bool flag = true;
+            for(int i = 0; i < 2; i++){
+                if (tas.find(pst.getMaterialN(i)) == -1){
+                    flag = false;
+                }
+            }
+            if (flag){
+                for(int i = 0; i < 2; i++){
+                    tas.remove(pst.getMaterialN(i));
+                }
+                tas.add(pst);
+            }
+            else{
+                cout << "Produk tidak dapat dibuat\n";
+            }
+            break;
+        default:
+            cout << "Inputan Salah\n";
+            break;
+    }
 }
 
 void Player::gerak(int arah) {

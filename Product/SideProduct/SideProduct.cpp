@@ -7,7 +7,7 @@ int SideProduct::getNbMaterial(){
     return requirements.size();
 }
 
-Product SideProduct::getMaterialN(int n){
+FarmProduct SideProduct::getMaterialN(int n){
     return requirements[n];
 }
 

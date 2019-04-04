@@ -14,6 +14,10 @@
 #include "../Animal/MeatProducingFarmAnimal.h"
 #include "../Renderable.h"
 #include "../LinkedList.h"
+#include "..\Product\SideProduct\GeprekSusu.h"
+#include "..\Product\SideProduct\PaketSate.h"
+#include "..\Product\SideProduct\PaketSteak.h"
+#include "..\Product\SideProduct\SideProduct.h"
 using namespace std;
 
 #ifndef PLAYER_H
