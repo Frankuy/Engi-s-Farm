@@ -11,7 +11,6 @@ class Truck : public Facility, public Renderable
 {
 	public:
 		Truck(Point);
-		~Truck();
 		char render();
 };
 
