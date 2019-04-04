@@ -6,7 +6,7 @@
 class Kuda : public MilkProducingFarmAnimal, public Renderable {
     /* Kuda : kelas ini merepresentasikan kelas rill Kuda */
     //KONSTRUKTOR
-    Kuda(Point lokasi, string nama, int lapar);
+    Kuda(Point lokasi, string nama, string suara, int lapar);
     char render();
 };
 #endif

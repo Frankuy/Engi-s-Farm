@@ -6,7 +6,7 @@
 
 class Sapi : public MilkProducingFarmAnimal, public MeatProducingFarmAnimal, public Renderable {
     //KONSTRUKTOR
-    Sapi(Point lokasi, string nama, int lapar);
+    Sapi(Point lokasi, string nama, string suara, int lapar);
     char render();
 };
 #endif

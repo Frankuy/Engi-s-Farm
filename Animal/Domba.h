@@ -7,7 +7,7 @@
 class Domba : public MilkProducingFarmAnimal, public MeatProducingFarmAnimal, public Renderable {
     /* Domba : kelas ini merepresentasikan kelas rill Domba */
     //KONSTRUKTOR
-    Domba(Point lokasi, string nama, int lapar);
+    Domba(Point lokasi, string nama, string suara, int lapar);
     char render();
 };
 #endif
