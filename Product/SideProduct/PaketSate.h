@@ -4,6 +4,9 @@
 #include <iostream>
 #include <string>
 #include "SideProduct.h"
+#include "..\FarmProduct\DagingSapi.h"
+#include "..\FarmProduct\DagingAyam.h"
+#include "..\FarmProduct\DagingKambing.h"
 using namespace std;
 
 class PaketSate: public SideProduct{
