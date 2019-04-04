@@ -14,7 +14,6 @@ class Mixer : public Facility, public Renderable
 	pada FarmProduct menjadi sebuah sideProduct */
 	public:
 		Mixer(Point);
-		~Mixer();
 
 		char render();
 };
