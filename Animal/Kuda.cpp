@@ -7,5 +7,5 @@ Kuda::Kuda(Point lokasi, string nama, string suara, int lapar ):  MilkProducingF
 }
 
 char Kuda::render(){
-    return '';
+    return 'h';
 }

@@ -7,5 +7,5 @@ Domba::Domba(Point lokasi, string nama, string suara, int lapar ):  MilkProducin
 }
 
 char Domba::render(){
-    return '';
+    return 'd';
 }

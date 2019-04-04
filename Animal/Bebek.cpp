@@ -7,5 +7,5 @@ Bebek::Bebek(Point lokasi, string nama, string suara, int lapar ):  EggProducing
 }
 
 char Bebek::render(){
-    return '';
+    return 'b';
 }

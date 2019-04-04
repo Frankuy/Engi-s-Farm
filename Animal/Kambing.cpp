@@ -7,5 +7,5 @@ Kambing::Kambing(Point lokasi, string nama, string suara, int lapar ):  MilkProd
 }
 
 char Kambing::render(){
-    return '';
+    return 'g';
 }

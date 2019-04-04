@@ -7,5 +7,5 @@ Sapi::Sapi(Point lokasi, string nama, string suara, int lapar ):  MilkProducingF
 }
 
 char Sapi::render(){
-    return '';
+    return 's';
 }

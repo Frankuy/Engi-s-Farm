@@ -7,5 +7,9 @@ Ayam::Ayam(Point lokasi, string nama, string suara, int lapar ):  EggProducingFa
 }
 
 char Ayam::render(){
-    return '';
+    return 'a';
+}
+
+FarmProduct Ayam::produceEgg(){
+    
 }

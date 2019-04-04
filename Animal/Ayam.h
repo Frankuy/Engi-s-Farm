@@ -9,5 +9,7 @@ class Ayam : public EggProducingFarmAnimal, public MeatProducingFarmAnimal, publ
     //KONSTRUKTOR
     Ayam(Point lokasi, string nama, string suara, int lapar);
     char render();
+    FarmProduct produceEgg();
+    
 };
 #endif
