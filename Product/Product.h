@@ -10,7 +10,6 @@ class Product {
         int harga;
     public:
         //KONSTRUKTOR
-        Product(); //nama = None; harga = 0;
         Product(string, int);
 
         //GETTER AND SETTER
