@@ -21,6 +21,6 @@ class MilkProducingFarmAnimal : public FarmAnimal {
         bool getAbleProduceMilk();
 
         //METHOD
-        FarmProduct produce(); //Menghasilkan farmProduct berupa milk
+        virtual FarmProduct produceMilk() = 0; //Menghasilkan farmProduct berupa milk
 };
 #endif
