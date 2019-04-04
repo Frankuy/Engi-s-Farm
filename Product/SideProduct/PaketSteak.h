@@ -9,9 +9,14 @@ using namespace std;
 class PaketSteak: public SideProduct{
     //Kelas turunan side product yang merupakan gabungan
     //dari telur ayam, daging sapi, dan susu sapi
+    /* Recipe :
+        - Daging Sapi
+        - Telur Ayam
+       Price : 200000
+     */
     public:
         //KONSTRUKTOR
-        PaketSteak(Player user);
+        PaketSteak();
 };
 
 #endif
