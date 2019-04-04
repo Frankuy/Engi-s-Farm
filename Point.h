@@ -20,5 +20,8 @@ class Point {
 
         //COUT OPERATOR
         friend ostream& operator<<(ostream& os, const Point& p);
+
+        //Equal Operator
+        bool operator==(Point p);
 };
 #endif
