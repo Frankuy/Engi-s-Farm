@@ -8,8 +8,11 @@ using namespace std;
 
 class DagingSapi: public FarmProduct{
     //Kelas yang merepresentasikan daging sapi
+    // Parameter Nama : "Daging Sapi"
+    // Parameter Harga: 179000
+    public:
         //KONSTRUKTOR
-        DagingSapi(string namaProduct, int harga);
+        DagingSapi();
 };
 
 #endif
