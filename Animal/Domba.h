@@ -1,6 +1,8 @@
 #ifndef DOMBA_H
 #define DOMBA_H
 
+#include "../Product/FarmProduct/SusuDomba.h"
+#include "../Product/FarmProduct/DagingDomba.h"
 #include "MilkProducingFarmAnimal.h"
 #include "MeatProducingFarmAnimal.h"
 

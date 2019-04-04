@@ -9,3 +9,13 @@ Bebek::Bebek(Point lokasi, string nama, string suara, int lapar ):  EggProducing
 char Bebek::render(){
     return 'b';
 }
+
+FarmProduct Bebek::produceEgg(){
+    TelurBebek t;
+    return t;
+}
+
+FarmProduct Bebek::produceMeat(){
+    DagingBebek b;
+    return b;
+}

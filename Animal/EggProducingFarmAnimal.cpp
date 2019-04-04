@@ -12,3 +12,7 @@ bool EggProducingFarmAnimal::getAbleProduceEgg(){
 void EggProducingFarmAnimal::setAbleProduceEgg(bool b){
     ableProduceEgg = b;
 }
+
+FarmProduct EggProducingFarmAnimal::produceEgg(){
+    return eggType;
+}

@@ -1,6 +1,8 @@
 #ifndef AYAM_H
 #define AYAM_H
 
+#include "../Product/FarmProduct/TelurAyam.h"
+#include "../Product/FarmProduct/DagingAyam.h"
 #include "EggProducingFarmAnimal.h"
 #include "MeatProducingFarmAnimal.h"
 
@@ -9,7 +11,6 @@ class Ayam : public EggProducingFarmAnimal, public MeatProducingFarmAnimal, publ
     //KONSTRUKTOR
     Ayam(Point lokasi, string nama, string suara, int lapar);
     char render();
-    FarmProduct produceEgg();
     
 };
 #endif

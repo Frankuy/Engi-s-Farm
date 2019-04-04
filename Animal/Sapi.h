@@ -1,6 +1,8 @@
 #ifndef SAPI_H
 #define SAPI_H
 
+#include "../Product/FarmProduct/SusuSapi.h"
+#include "../Product/FarmProduct/DagingSapi.h"
 #include "MilkProducingFarmAnimal.h"
 #include "MeatProducingFarmAnimal.h"
 

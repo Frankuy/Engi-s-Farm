@@ -1,7 +1,8 @@
 #include <iostream>
-#include "FarmAnimal.h"
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include "FarmAnimal.h"
 using namespace std;
 
 //Point lokasi; //lokasi hewan
@@ -15,6 +16,7 @@ FarmAnimal::FarmAnimal(Point l, string n, string s, int wl): waktuLapar(wl){
     nama = n;
     suara = s;
     lapar = false;
+    ticks = 0;
 }
 
 FarmAnimal::~FarmAnimal(){}
@@ -46,21 +48,26 @@ bool FarmAnimal::getLapar() const{
 }
 
 void FarmAnimal::gerak(){ 
-    int iRand;
-    srand(time(NULL));
+    int iRand; 
+    srand (time(NULL));
     iRand = rand() % 4;
     
     if(iRand == 0){ //Gerak ke Kanan
-        lokasi.setX(lokasi.getX() + 1);
+        lokasi.setX(lokasi.getX() + 1); 
     }
     if(iRand == 1){ //Gerak ke Kiri
-        lokasi.setX(lokasi.getX() - 1);
+        lokasi.setX(lokasi.getX() - 1); 
     }
     if(iRand == 2){ //Gerak ke Atas
         lokasi.setY(lokasi.getY() + 1);
     }
     if(iRand == 3){ //Gerak ke Bawah
         lokasi.setY(lokasi.getY() - 1);
+    }
+
+    ticks++;
+    if(ticks % waktuLapar == 0){
+        lapar = true;
     }
 }
 

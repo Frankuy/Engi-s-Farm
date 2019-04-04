@@ -12,3 +12,7 @@ bool MeatProducingFarmAnimal::getAbleProduceMeat(){
 void MeatProducingFarmAnimal::setAbleProduceMeat(bool b){
     ableProduceMeat = b;
 }
+
+FarmProduct MeatProducingFarmAnimal::produceMeat(){
+    return meatType;
+}

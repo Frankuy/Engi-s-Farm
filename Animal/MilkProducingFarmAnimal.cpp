@@ -12,3 +12,7 @@ bool MilkProducingFarmAnimal::getAbleProduceMilk(){
 void MilkProducingFarmAnimal::setAbleProduceMilk(bool b){
     ableProduceMilk = b;
 }
+
+FarmProduct MilkProducingFarmAnimal::produceMilk(){
+    return milkType;
+}

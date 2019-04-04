@@ -1,6 +1,7 @@
 #ifndef KUDA_H
 #define KUDA_H
 
+#include "../Product/FarmProduct/SusuKuda.h"
 #include "MilkProducingFarmAnimal.h"
 
 class Kuda : public MilkProducingFarmAnimal, public Renderable {

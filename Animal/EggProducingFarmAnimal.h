@@ -11,6 +11,7 @@ class EggProducingFarmAnimal : public FarmAnimal {
     protected:
         bool ableProduceEgg; //apakah hewan sudah bisa memproduksi telur atau tidak.
                             //tergantung status lapar dan produknya sudah diambil atau belum
+        FarmProduct eggType;
 
     public:
         //KONSTRUKTOR
@@ -21,6 +22,6 @@ class EggProducingFarmAnimal : public FarmAnimal {
         void setAbleProduceEgg(bool);
 
         //METHOD
-        virtual FarmProduct produceEgg() = 0; //Menghasilkan FarmProduct yaitu egg
+        FarmProduct produceEgg(); //Menghasilkan FarmProduct yaitu egg
 };
 #endif

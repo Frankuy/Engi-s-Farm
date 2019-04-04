@@ -14,6 +14,7 @@ class FarmAnimal{
         string suara; //suara hewan
         const int waktuLapar; //periode lapar hewan. Misal, tiap 5 tick lapar
         bool lapar; //apakah hewan lapar atau tidak
+        int ticks; //Menyatakan waktu yang telah dilewati hewan, menentukan status lapar atau tidak
 
     public:
         //KONSTRUKTOR

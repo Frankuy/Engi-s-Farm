@@ -11,6 +11,7 @@ class MilkProducingFarmAnimal : public FarmAnimal {
     protected:
         bool ableProduceMilk; //apakah hewan sudah bisa memproduksi susu atau tidak.
                               //tergantung status lapar dan produknya sudah diambil atau belum
+        FarmProduct milkType;
 
     public:
         //KONSTRUKTOR
@@ -21,6 +22,6 @@ class MilkProducingFarmAnimal : public FarmAnimal {
         bool getAbleProduceMilk();
 
         //METHOD
-        virtual FarmProduct produceMilk() = 0; //Menghasilkan farmProduct berupa milk
+        FarmProduct produceMilk(); //Menghasilkan farmProduct berupa milk
 };
 #endif
