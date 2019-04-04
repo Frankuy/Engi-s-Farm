@@ -13,7 +13,7 @@ class Mixer : public Facility, public Renderable
 	/* Kelas ini merepresentasikan alat Mixer untuk melakukan mix 
 	pada FarmProduct menjadi sebuah sideProduct */
 	public:
-		Mixer();
+		Mixer(Point);
 		~Mixer();
 
 		char render();

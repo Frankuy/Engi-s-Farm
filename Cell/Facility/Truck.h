@@ -10,7 +10,7 @@ using namespace std;
 class Truck : public Facility, public Renderable
 {
 	public:
-		Truck();
+		Truck(Point);
 		~Truck();
 		char render();
 };
