@@ -12,7 +12,6 @@ class Well : public Facility, public Renderable
 {
 	public:
 		Well(Point);
-		~Well();
 		char render();
 };
 
