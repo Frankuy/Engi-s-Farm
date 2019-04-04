@@ -4,6 +4,8 @@
 #include <iostream>
 #include <string>
 #include "SideProduct.h"
+#include "..\FarmProduct\DagingAyam.h"
+#include "..\FarmProduct\SusuSapi.h"
 using namespace std;
 
 class GeprekSusu: public SideProduct{
