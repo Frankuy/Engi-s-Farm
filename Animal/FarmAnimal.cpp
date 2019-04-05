@@ -49,7 +49,6 @@ bool FarmAnimal::getLapar() const{
 
 void FarmAnimal::gerak(){ 
     int iRand; 
-    srand (time(NULL));
     iRand = rand() % 4;
     
     if(iRand == 0){ //Gerak ke Kanan
@@ -79,7 +78,17 @@ void FarmAnimal::mati(){
     cout << "Si " << nama << " telah mati." << endl; 
 }
 
-void FarmAnimal::makan(){
-    cout << "Si " << nama << " makan." << endl;
-    lapar = false;
+void FarmAnimal::makan(Land* place){
+    if(place->getAdaRumputnya()){  
+        cout << "Si " << nama << " makan." << endl;
+        lapar = false;
+        place->setAdaRumputnya(false);
+    } 
+    else{
+        cout << "Tidak bisa makan disini" << endl;
+    }
+}
+
+void FarmAnimal::makan(Cell* place){
+    cout << "Tidak bisa makan disini" << endl;
 }

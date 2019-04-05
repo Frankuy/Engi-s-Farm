@@ -2,7 +2,7 @@
 #include "MilkProducingFarmAnimal.h"
 using namespace std;
 
-MilkProducingFarmAnimal::MilkProducingFarmAnimal(Point l, string n, string s, int wl): FarmAnimal(l, n, s, wl){
+MilkProducingFarmAnimal::MilkProducingFarmAnimal(Point l, string n, string s, int wl): FarmAnimal(l, n, s, wl), milkType("None", 0){
     ableProduceMilk = true;
 }
 

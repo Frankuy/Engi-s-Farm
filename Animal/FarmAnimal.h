@@ -2,6 +2,8 @@
 #include <string>
 #include "../Point.h"
 #include "../Product/FarmProduct/FarmProduct.h"
+#include "../Cell/Cell.h"
+#include "../Cell/Land/Land.h"
 #include "../Renderable.h"
 using namespace std;
 
@@ -36,6 +38,7 @@ class FarmAnimal{
         virtual void gerak(); //menggerakkan hewan, mengubah posisi hewan
         virtual void bersuara(); //mengeluarkan suara berupa cetakan ke terminal
         virtual void mati(); //destruct hewan
-        virtual void makan(); //makan rumput, mengubah status lapar
+        virtual void makan(Land*); //makan rumput, mengubah status lapar
+        virtual void makan(Cell*);
 };
 #endif

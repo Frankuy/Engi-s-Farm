@@ -7,6 +7,7 @@ Kambing::Kambing(Point lokasi, string nama, string suara, int lapar ):  MilkProd
     SusuKambing s;
     meatType = d;
     milkType = s;
+    id = "Animal";
 }
 
 char Kambing::render(){

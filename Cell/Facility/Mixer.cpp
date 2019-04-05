@@ -2,6 +2,7 @@
 
 Mixer::Mixer(Point P) : Facility(P)
 {
+	id = "Facility";
 }
 
 char Mixer::render()

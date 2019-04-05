@@ -2,6 +2,7 @@
 
 Well::Well(Point P) : Facility(P)
 {
+	id = "Facility";
 }
 
 char Well::render()

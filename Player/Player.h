@@ -1,3 +1,6 @@
+#ifndef PLAYER_H
+#define PLAYER_H
+
 #include <iostream>
 #include <string>
 #include "../Animal/FarmAnimal.h"
@@ -14,14 +17,12 @@
 #include "../Animal/MeatProducingFarmAnimal.h"
 #include "../Renderable.h"
 #include "../LinkedList.h"
-#include "..\Product\SideProduct\GeprekSusu.h"
-#include "..\Product\SideProduct\PaketSate.h"
-#include "..\Product\SideProduct\PaketSteak.h"
-#include "..\Product\SideProduct\SideProduct.h"
+#include "../Product/SideProduct/GeprekSusu.h" 
+#include "../Product/SideProduct/PaketSate.h"
+#include "../Product/SideProduct/PaketSteak.h"
+#include "../Product/SideProduct/SideProduct.h"
 using namespace std;
 
-#ifndef PLAYER_H
-#define PLAYER_H
 /*! Kelas ini menyatakan player yang memainkan permainan. */
 class Player : public Renderable {
     private:
@@ -87,7 +88,8 @@ class Player : public Renderable {
 
         //METHODD
         void talk(FarmAnimal&); //!< Berbicara dengan hewan
-        void interact(FarmAnimal&); //!< Berinteraksi dengan hewan untuk mendapatkan FarmProduct
+        void interact(EggProducingFarmAnimal&); //!< Berinteraksi dengan hewan untuk mendapatkan FarmProduct Egg
+        void interact(MilkProducingFarmAnimal&); //!< Berinteraksi dengan hewan untuk mendapatkan FarmProduct Milk
         void interact(MeatProducingFarmAnimal&); //!< Berinteraksi dengan hewan dengan kill lalu mendapatkan MeatProduct
         void interact(Well); //!< Interaksi dengan well
         void interact(Truck); //!< Interaksi dengan truck 

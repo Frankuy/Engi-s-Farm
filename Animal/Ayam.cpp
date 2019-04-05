@@ -7,6 +7,7 @@ Ayam::Ayam(Point lokasi, string nama, string suara, int lapar ):  EggProducingFa
     DagingAyam d;
     eggType = t;
     meatType = d;
+    id = "Animal";
 }
 
 char Ayam::render(){

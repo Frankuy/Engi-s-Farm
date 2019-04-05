@@ -2,6 +2,7 @@
 
 Truck::Truck(Point P) : Facility(P)
 {
+	id = "Facility";
 }
 
 char Truck::render()

@@ -7,6 +7,7 @@ Domba::Domba(Point lokasi, string nama, string suara, int lapar ):  MilkProducin
     SusuDomba s;
     milkType = s;
     meatType = d;
+    id = "Animal";
 }
 
 char Domba::render(){

@@ -4,8 +4,8 @@
 #include <iostream>
 #include <string>
 #include "SideProduct.h"
-#include "..\FarmProduct\DagingSapi.h"
-#include "..\FarmProduct\TelurAyam.h"
+#include "../FarmProduct/DagingSapi.h"
+#include "../FarmProduct/TelurAyam.h"
 
 using namespace std;
 

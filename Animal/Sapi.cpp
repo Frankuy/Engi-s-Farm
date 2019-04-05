@@ -7,6 +7,7 @@ Sapi::Sapi(Point lokasi, string nama, string suara, int lapar ):  MilkProducingF
     SusuSapi s;
     milkType = s;
     meatType = d;
+    id = "Animal";
 }
 
 char Sapi::render(){

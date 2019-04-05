@@ -9,6 +9,7 @@ Player::Player() : kapasitasEmber(6), kapasitasTas(10) {
     tas = LinkedList<Product>();
     neffTas = 0;
     uang = 0;
+    id = "Player";
 }
 
 Player::Player(int e, int ke, int kt, Point l, int u) : kapasitasEmber(ke), kapasitasTas(kt) {
@@ -107,8 +108,14 @@ void Player::talk(FarmAnimal &a) {
     a.bersuara();
 }
 
-void Player::interact(FarmAnimal &f) {
-    f.produce();
+void Player::interact(EggProducingFarmAnimal &f) {
+    setTas(true, f.produceEgg());
+    cout << "Telur diproduksi" << endl;
+}
+
+void Player::interact(MilkProducingFarmAnimal &f) {
+    setTas(true, f.produceMilk());
+    cout << "Susu diproduksi" << endl;
 }
 
 void Player::interact(MeatProducingFarmAnimal &m) {
@@ -130,11 +137,14 @@ void Player::interact(Truck t) {
 }
 
 void Player::kill(MeatProducingFarmAnimal &m) {
-    //
+    cout << "Hewan " << m.getNama() << " telah mati." << endl;
+    id = "-";
+    setTas(true, m.produceMeat());
 }
 
 void Player::grow(Land &l) {
-    //
+    cout << "Menumbuhkan Rumput pada Land " << l.getLokasi() << endl;
+    l.setAdaRumputnya(true);
 }
 
 void Player::mix(Cell& c) {

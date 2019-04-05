@@ -2,7 +2,7 @@
 #include "MeatProducingFarmAnimal.h"
 using namespace std;
 
-MeatProducingFarmAnimal::MeatProducingFarmAnimal(Point l, string n, string s, int wl): FarmAnimal(l, n, s, wl){
+MeatProducingFarmAnimal::MeatProducingFarmAnimal(Point l, string n, string s, int wl): FarmAnimal(l, n, s, wl), meatType("None", 0){
     ableProduceMeat = true;
 }
 

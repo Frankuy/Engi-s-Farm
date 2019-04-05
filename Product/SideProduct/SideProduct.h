@@ -5,8 +5,8 @@
 #include <string>
 #include <vector>
 #include "../Product.h"
-#include "..\FarmProduct\FarmProduct.h"
-#include "../../Player/Player.h"
+#include "../FarmProduct/FarmProduct.h" 
+#include "../../Player/Player.h" 
 
 using namespace std;
 
